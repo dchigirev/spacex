@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@spacex/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@spacex/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@spacex/entities": ["libs/entities/src/index.ts"],
+      "@spacex/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

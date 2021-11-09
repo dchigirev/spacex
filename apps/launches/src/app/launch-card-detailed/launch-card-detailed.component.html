@@ -1,0 +1,13 @@
+<spacex-launch-card
+  [launch]="data.launch">
+</spacex-launch-card>
+
+<ng-container *ngIf="rocket">
+  <h3>Rocket</h3>
+  <spacex-rocket-card [rocket]="rocket"></spacex-rocket-card>
+</ng-container>
+
+<ng-container *ngIf="data.crew">
+  <h3>Crew</h3>
+  <spacex-crew-card *ngFor="let item of data.crew" [crew]="item"></spacex-crew-card>
+</ng-container>

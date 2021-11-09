@@ -1,0 +1,19 @@
+<!-- <spacex-card> -->
+  <div class="card" *ngIf="launch">
+    <div class="left">
+      <div class="patch">
+        <img *ngIf="patchImg" [src]="patchImg">
+        <spacex-image *ngIf="!patchImg" [src]="defaultImg"></spacex-image>
+      </div>
+    </div>
+    <div class="right">
+      <div class="meta">
+        <b>#{{ launch.flight_number }}</b><br/>
+        {{ launch.details?.rocket?.name }}
+      </div>
+      <div class="countdown">
+        <spacex-countdown [time]="launch.date_unix"></spacex-countdown>
+      </div>
+    </div>
+  </div>
+<!-- </spacex-card> -->
