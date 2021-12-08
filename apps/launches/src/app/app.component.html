@@ -1,6 +1,11 @@
 <h1>SpaceX launches</h1>
 
-<div class="cards">
+<nav>
+  <a routerLink="about">About</a>&nbsp;
+  <a routerLink="launches">Launches</a>
+</nav>
+
+<!-- <div class="cards">
   <ng-container *ngFor="let launch of launches$ | async">
     <spacex-card class="card">
       <spacex-launch-card 
@@ -9,4 +14,6 @@
       </spacex-launch-card>
     </spacex-card>
   </ng-container>
-</div>
+</div> -->
+
+<router-outlet></router-outlet>

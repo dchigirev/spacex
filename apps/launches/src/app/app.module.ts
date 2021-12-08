@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { LaunchCardModule } from './launch-card/launch-card.module';
 import { LaunchCardDetailedModule } from './launch-card-detailed/launch-card-detailed.module';
 import { UiModule } from '@spacex/ui';
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -19,7 +20,8 @@ import { UiModule } from '@spacex/ui';
     MatDialogModule,
     UiModule,
     LaunchCardModule,
-    LaunchCardDetailedModule
+    LaunchCardDetailedModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent],

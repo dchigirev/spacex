@@ -17,6 +17,12 @@
     "paths": {
       "@spacex/api-interfaces": ["libs/api-interfaces/src/index.ts"],
       "@spacex/entities": ["libs/entities/src/index.ts"],
+      "@spacex/launches/pages/about-page": [
+        "libs/launches/pages/about-page/src/index.ts"
+      ],
+      "@spacex/launches/pages/launches-page": [
+        "libs/launches/pages/launches-page/src/index.ts"
+      ],
       "@spacex/ui": ["libs/ui/src/index.ts"]
     }
   },
